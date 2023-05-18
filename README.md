@@ -80,7 +80,7 @@ I downloaded and installed a Microsoft Visual Studio C++ 2015-2022 Redistributab
 <img src="https://imgur.com/Vt7MsSM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I downloaded and installed a MySQL Server Instance Configuration Wizard. This is installing a database on the VM because osTicket needs one in order to store all the application data (tickets, users, agents, etc).
+I downloaded and installed a MySQL Server Instance Configuration Wizard. This installed a database on the VM because osTicket needs one in order to store all the application data (tickets, users, agents, etc).
 </p>
 <br />
 
@@ -96,7 +96,7 @@ I opened IIS as an admin and registered PHP from within IIS.
 <img src="https://imgur.com/Ehl8fFe.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I downloaded osTicket v1.15.8, copied the "upload" folder to C:\inetpub\wwwroot (webserver's main folder), and renamed the "upload" folder to "osTicket."
+I downloaded osTicket v1.15.8, copied the "upload" folder to "C:\inetpub\wwwroot" (webserver's main folder), and renamed the "upload" folder to "osTicket."
 </p>
 <br />
 
@@ -104,7 +104,7 @@ I downloaded osTicket v1.15.8, copied the "upload" folder to C:\inetpub\wwwroot 
 <img src="https://imgur.com/rqbZlYx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I enabled PHP extensions. They are reccomendations given by osTicket and improvements for osTicket.
+I enabled PHP extensions. They are reccomendations and improvements given by/for osTicket.
 </p>
 <br />
 
@@ -112,7 +112,7 @@ I enabled PHP extensions. They are reccomendations given by osTicket and improve
 <img src="https://imgur.com/wOefhhQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I allowed all users to have permission to manipulate this file because osTicket has to interact with this file but I don't know which user it will use to do that.
+I allowed all users to have permission to manipulate this file because osTicket has to interact with this file but I didn't know which user it used to do that.
 </p>
 <br />
 
@@ -120,7 +120,7 @@ I allowed all users to have permission to manipulate this file because osTicket 
 <img src="https://imgur.com/x4uDRke.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After I set up osTicket in the browser I downloaded and installed HeidiSQL. HeidiSQL allowed me to connect to the SQL server that I installed earlier and setup a database that osTicket used.
+After I set up osTicket in the browser, I downloaded and installed HeidiSQL. HeidiSQL allowed me to connect to the SQL server that I installed earlier, and setup a database that osTicket used.
 </p>
 <br />
 
