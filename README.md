@@ -19,10 +19,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - IIS in Windows WITH CGI
 - PHP Manager for IIS
-- Rewrite Module
+- Rewrite Module (IIS URL Rewrite Module)
 - PHP 7.3.8
-- Visual Studio Redistribution
-- MySQL 5.5.62
+- Visual Studio Redistribution (Microsoft Visual C++ 2015-2022 Redistributable)
+- MySQL 5.5.62 (MySQL Server Instance Configuration Wizard)
+- osTicket v1.15.8
+- HeidiSQL
 
 <h2>Installation Steps</h2>
 
