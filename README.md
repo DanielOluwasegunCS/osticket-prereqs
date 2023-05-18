@@ -40,7 +40,7 @@ I created a Windows 10 virtual machine (VM) with 2 virtual CPUs. When I created 
 <img src="https://i.imgur.com/cJOA5SS.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I installed/enabled Internet Information Services (IIS) in Windows with CGI because CGI allowed me to install PHP Manager.
+I enabled Internet Information Services (IIS) in Windows with CGI because CGI allowed me to install PHP Manager.
 </p>
 <br />
 
