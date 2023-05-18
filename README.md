@@ -19,10 +19,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - IIS in Windows WITH CGI
 - PHP Manager for IIS
-- Rewrite Module (IIS URL Rewrite Module)
+- Rewrite Module
 - PHP 7.3.8
-- Visual Studio Redistribution (Microsoft Visual C++ 2015-2022 Redistributable)
-- MySQL 5.5.62 (MySQL Server Instance Configuration Wizard)
+- Visual Studio Redistribution
+- MySQL 5.5.62
 - osTicket v1.15.8
 - HeidiSQL
 
@@ -32,7 +32,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/5MEAasf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-First, I created a Windows 10 virtual machine (VM) with 2 virtual CPUs. It also creates a virtual network and subnet automatically for me.
+I created a Windows 10 virtual machine (VM) with 2 virtual CPUs. When I created this VM, Microsoft Azure also created a virtual network and subnet automatically for me.
 </p>
 <br />
 
@@ -40,7 +40,7 @@ First, I created a Windows 10 virtual machine (VM) with 2 virtual CPUs. It also 
 <img src="https://i.imgur.com/cJOA5SS.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-
+I installed/enabled Internet Information Services (IIS) in Windows with CGI because CGI allowed me to install PHP Manager.
 </p>
 <br />
 
@@ -48,7 +48,7 @@ First, I created a Windows 10 virtual machine (VM) with 2 virtual CPUs. It also 
 <img src="https://imgur.com/bzvnLMh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let him run away from the pain.
+I downloaded and installed PHP Manager for IIS. osTicket runs off of PHP so later I installed a web server with PHP on this VM.
 </p>
 <br />
 
@@ -56,7 +56,7 @@ It is important to take care of the patient, to be followed by the patient, but 
 <img src="https://imgur.com/Kn8weGw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let him run away from the pain.
+I downloaded and installed an IIS URL Rewrite Module. This is one of the many requirements for osTicket to work.
 </p>
 <br />
 
@@ -64,7 +64,7 @@ It is important to take care of the patient, to be followed by the patient, but 
 <img src="https://imgur.com/KliKOPm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let him run away from the pain.
+I created a directory for PHP on the local C: drive. I then downloaded a zip folder of PHP and extracted it into the PHP folder I made in the C: drive.
 </p>
 <br />
 
@@ -72,7 +72,7 @@ It is important to take care of the patient, to be followed by the patient, but 
 <img src="https://imgur.com/V8uiiv8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let him run away from the pain.
+I downloaded and installed a Microsoft Visual Studio C++ 2015-2022 Redistributable. PHP requires this installation in order for it to work.
 </p>
 <br />
 
@@ -80,7 +80,7 @@ It is important to take care of the patient, to be followed by the patient, but 
 <img src="https://imgur.com/Vt7MsSM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let him run away from the pain.
+I downloaded and installed a MySQL Server Instance Configuration Wizard. This is installing a database on the VM because osTicket needs one in order to store all the application data (tickets, users, agents, etc).
 </p>
 <br />
 
@@ -88,7 +88,7 @@ It is important to take care of the patient, to be followed by the patient, but 
 <img src="https://imgur.com/WCPNM31.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let him run away from the pain.
+I opened IIS as an admin and registered PHP from within IIS.
 </p>
 <br />
 
@@ -96,7 +96,7 @@ It is important to take care of the patient, to be followed by the patient, but 
 <img src="https://imgur.com/Ehl8fFe.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let him run away from the pain.
+I downloaded osTicket v1.15.8, copied the "upload" folder to C:\inetpub\wwwroot (webserver's main folder), and renamed the "upload" folder to "osTicket."
 </p>
 <br />
 
@@ -104,7 +104,7 @@ It is important to take care of the patient, to be followed by the patient, but 
 <img src="https://imgur.com/rqbZlYx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let him run away from the pain.
+I enabled PHP extensions. They are reccomendations given by osTicket and improvements for osTicket.
 </p>
 <br />
 
@@ -112,7 +112,7 @@ It is important to take care of the patient, to be followed by the patient, but 
 <img src="https://imgur.com/wOefhhQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let him run away from the pain.
+I allowed all users to have permission to manipulate this file because osTicket has to interact with this file but I don't know which user it will use to do that.
 </p>
 <br />
 
@@ -120,7 +120,7 @@ It is important to take care of the patient, to be followed by the patient, but 
 <img src="https://imgur.com/x4uDRke.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let him run away from the pain.
+After I set up osTicket in the browser I downloaded and installed HeidiSQL. HeidiSQL allowed me to connect to the SQL server that I installed earlier and setup a database that osTicket used.
 </p>
 <br />
 
