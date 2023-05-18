@@ -133,7 +133,7 @@ I created a new connection to the MySQL Server. Then I created a new database in
 <br />
 
 <p>
-<img src="https://imgur.com/BOzICDC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/BOzICDC.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 I deleted the setup folder in "C:\inetpub\wwwroot\osTicket", and set permissions to “Read” only in "C:\inetpub\wwwroot\osTicket\include\ost-config.php." After, I browsed to my help desk login page, logged in with my admin account and got on to the ticketing screen.
